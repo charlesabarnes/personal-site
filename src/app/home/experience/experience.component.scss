@@ -1,0 +1,26 @@
+@import '../../../variables.scss';
+:host {
+    >div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        >div.technology {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            flex-basis: 50%;
+            div.progress-bar{ 
+                background-color: black;
+                margin: 20px;
+                border-radius: 3px;
+                >div.progress {
+                    background-color: $primary;
+                    height: 7px;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+
+
+}

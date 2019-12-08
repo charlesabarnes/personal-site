@@ -1,0 +1,10 @@
+:host {
+    div.header {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+        a {
+            margin: 5px;
+        }
+    }
+}

@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'variables.scss';
+
+body {
+    background-color: #272727;
+    color: #f4f4f4;
+    font-family: sans-serif;
+}
+.pixel-spinner {
+    box-sizing: border-box;
+    & {
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        align-items: center;
+        justify-content: center;
+        width: 99%;
+        .pixel-spinner-inner {
+            width: calc(70px / 7);
+            height: calc(70px / 7);
+            background-color: $primary;
+            color: $primary;
+            box-shadow: 15px 15px  0 0,
+                        -15px -15px  0 0,
+                        15px -15px  0 0,
+                        -15px 15px  0 0,
+                        0 15px  0 0,
+                        15px 0  0 0,
+                        -15px 0  0 0,
+                        0 -15px 0 0;
+            animation: pixel-spinner-animation 2000ms linear infinite;
+          }
+    }
+    * {
+        box-sizing: border-box;
+    }
+}
+
+
+  @keyframes pixel-spinner-animation {
+    50% {
+      box-shadow: 20px 20px 0px 0px,
+                  -20px -20px 0px 0px,
+                  20px -20px 0px 0px,
+                  -20px 20px 0px 0px,
+                  0px 10px 0px 0px,
+                  10px 0px 0px 0px,
+                  -10px 0px 0px 0px,
+                  0px -10px 0px 0px;
+    }
+    75% {
+      box-shadow: 20px 20px 0px 0px,
+                  -20px -20px 0px 0px,
+                  20px -20px 0px 0px,
+                  -20px 20px 0px 0px,
+                  0px 10px 0px 0px,
+                  10px 0px 0px 0px,
+                  -10px 0px 0px 0px,
+                  0px -10px 0px 0px;
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

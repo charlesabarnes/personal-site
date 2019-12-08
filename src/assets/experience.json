@@ -1,0 +1,28 @@
+{
+    "technologies": [
+        {
+            "name": "HTML & CSS",
+            "startDate": "2010-01-01"
+        },
+        {
+            "name": "JavaScript",
+            "startDate": "2013-01-01"
+        },
+        {
+            "name": "TypeScript",
+            "startDate": "2017-08-01"
+        },
+        {
+            "name": "AngularJS",
+            "startDate": "2016-01-04"
+        },
+        {
+            "name": "Angular",
+            "startDate": "2017-05-01"
+        },
+        {
+            "name": "PHP",
+            "startDate": "2017-02-01"
+        }
+    ]
+}

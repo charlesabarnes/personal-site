@@ -1,0 +1,9 @@
+<loading *ngIf="loading"></loading>
+<div *ngIf="!loading">
+    <div class="technology" *ngFor="let technology of technologies.technologies">
+        {{ technology.name }}
+        <div class="progress-bar">
+            <div class="progress" class="progress" [ngStyle]="{'width': datePercentage(technology)}"></div>
+        </div>
+    </div>
+</div>
