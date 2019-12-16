@@ -14,7 +14,7 @@
             "developer"
         ],
         "year": "2019",
-        "description": ""
+        "description": "Framework or Platform that allows you to easily create in app notifications that are sent via websocket, or send browser push notifications if the user is not active in the application that Trumpet is integrated with."
     },
     {
         "name": "Pointing Poker",
@@ -31,7 +31,7 @@
             "designer"
         ],
         "year": "2019",
-        "description": ""
+        "description": "Angular app used for agile teams wanting to add points to their user stories."
     },
     {
         "name": "Career Portal Angular Upgrade",
@@ -45,7 +45,7 @@
             "developer"
         ],
         "year": "2019",
-        "description": ""
+        "description": "Angular universal app that allows candidates to search for and apply to jobs."
     },
     {
         "name": "Boxlab - BBO",
@@ -61,7 +61,7 @@
             "designer"
         ],
         "year": "2019",
-        "description": ""
+        "description": "Angular and Firebase application that is used to reserve QA environments for testing as well as viewing up to date version information."
     },
     {
         "name": "RAMPS",
@@ -78,7 +78,7 @@
             "developer"
         ],
         "year": "2018",
-        "description": ""
+        "description": "Platform created for marketing on robots with displays. The platform is flexible enough to allow you to synchronize displays on many robots or independent screens via a web app."
     },
     {
         "name": "SPF Toolbox",
@@ -92,7 +92,7 @@
             "developer"
         ],
         "year": "2017",
-        "description": ""
+        "description": "A web app that gathers DNS information such as SPF, MX, and Whois. It is open source and modular to be a free self hosted version of Mx toolbox. This app has over 50 users a day on my main site and many more users who self host the project"
     },
     {
         "name": "Dataloader GUI",
@@ -106,7 +106,7 @@
             "developer"
         ],
         "year": "2016",
-        "description": ""
+        "description": "Simple Java UI for Bullhorn's Dataloader project"
     },
     {
         "name": "How Much With Tax",
@@ -123,6 +123,6 @@
             "developer"
         ],
         "year": "2016",
-        "description": ""
+        "description": "Web app that provided the exact cost of an item with tax. The location was retrieved from the user or the browser and with that information we used the Google Maps API to determine the zip code. From the zip code we queried a database of zip codes with tax rates associated."
     }
 ]
