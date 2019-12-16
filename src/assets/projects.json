@@ -1,0 +1,128 @@
+[
+    {
+        "name": "Trumpet",
+        "url": "https://github.com/charlesabarnes/trumpet",
+        "image": "",
+        "tools": [
+            "NodeJs",
+            "Express",
+            "MongoDB",
+            "Websockets"
+        ],
+        "role": [
+            "creator",
+            "developer"
+        ],
+        "year": "2019",
+        "description": ""
+    },
+    {
+        "name": "Pointing Poker",
+        "url": "https://github.com/charlesabarnes/pointing-poker",
+        "image": "",
+        "tools": [
+            "NodeJs",
+            "Websockets",
+            "Angular Universal"
+        ],
+        "role": [
+            "creator",
+            "developer",
+            "designer"
+        ],
+        "year": "2019",
+        "description": ""
+    },
+    {
+        "name": "Career Portal Angular Upgrade",
+        "url": "https://github.com/bullhorn/career-portal",
+        "image": "",
+        "tools": [
+            "Angular Universal"
+        ],
+        "role": [
+            "creator",
+            "developer"
+        ],
+        "year": "2019",
+        "description": ""
+    },
+    {
+        "name": "Boxlab - BBO",
+        "url": "",
+        "image": "",
+        "tools": [
+            "Angular",
+            "Firbase"
+        ],
+        "role": [
+            "creator",
+            "developer",
+            "designer"
+        ],
+        "year": "2019",
+        "description": ""
+    },
+    {
+        "name": "RAMPS",
+        "url": "",
+        "image": "",
+        "tools": [
+            "NodeJs",
+            "Express",
+            "Angular",
+            "Python"
+        ],
+        "role": [
+            "creator",
+            "developer"
+        ],
+        "year": "2018",
+        "description": ""
+    },
+    {
+        "name": "SPF Toolbox",
+        "url": "https://github.com/charlesabarnes/SPFtoolbox",
+        "image": "",
+        "tools": [
+            "PHP"
+        ],
+        "role": [
+            "creator",
+            "developer"
+        ],
+        "year": "2017",
+        "description": ""
+    },
+    {
+        "name": "Dataloader GUI",
+        "url": "https://github.com/charlesabarnes/dataloaderGUI",
+        "image": "",
+        "tools": [
+            "Java"
+        ],
+        "role": [
+            "creator",
+            "developer"
+        ],
+        "year": "2016",
+        "description": ""
+    },
+    {
+        "name": "How Much With Tax",
+        "url": "https://github.com/SpaghettiCodeStudios/HowMuchWithTax",
+        "image": "",
+        "tools": [
+            "JavaScript",
+            "Google Maps API",
+            "MySQL",
+            "PHP"
+        ],
+        "role": [
+            "creator",
+            "developer"
+        ],
+        "year": "2016",
+        "description": ""
+    }
+]

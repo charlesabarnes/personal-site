@@ -7,6 +7,9 @@ import { HomeComponent } from './home/home.component';
 import { LoadingIndicatorComponent } from './loading-indicator/loading-indicator.component';
 import { ExperienceComponent } from './home/experience/experience.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DatePipe } from '@angular/common';
+import { ProjectsComponent } from './home/projects/projects.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -19,19 +22,25 @@ const routes: Routes = [
       HomeComponent,
       LoadingIndicatorComponent,
       ExperienceComponent,
+      ProjectsComponent,
+      PortfolioComponent,
    ],
    imports: [
       BrowserModule,
       RouterModule.forRoot(routes),
-      HttpClientModule,
+      HttpClientModule
    ],
-   providers: [],
+   providers: [
+      DatePipe
+   ],
    bootstrap: [
       AppComponent
    ],
    entryComponents: [
-    LoadingIndicatorComponent,
-    ExperienceComponent,
+      LoadingIndicatorComponent,
+      ExperienceComponent,
+      ProjectsComponent,
+      PortfolioComponent
    ]
 })
 export class AppModule { }
