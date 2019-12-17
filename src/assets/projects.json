@@ -19,7 +19,7 @@
     {
         "name": "Pointing Poker",
         "url": "https://github.com/charlesabarnes/pointing-poker",
-        "image": "",
+        "image": "pointing-poker.png",
         "tools": [
             "NodeJs",
             "Websockets",
@@ -36,7 +36,7 @@
     {
         "name": "Career Portal Angular Upgrade",
         "url": "https://github.com/bullhorn/career-portal",
-        "image": "",
+        "image": "career-portal.png",
         "tools": [
             "Angular Universal"
         ],
@@ -50,7 +50,7 @@
     {
         "name": "Boxlab - BBO",
         "url": "",
-        "image": "",
+        "image": "boxlab.png",
         "tools": [
             "Angular",
             "Firbase"
@@ -83,7 +83,7 @@
     {
         "name": "SPF Toolbox",
         "url": "https://github.com/charlesabarnes/SPFtoolbox",
-        "image": "",
+        "image": "spf-toolbox.png",
         "tools": [
             "PHP"
         ],
@@ -111,7 +111,7 @@
     {
         "name": "How Much With Tax",
         "url": "https://github.com/SpaghettiCodeStudios/HowMuchWithTax",
-        "image": "",
+        "image": "how-much-with-tax.png",
         "tools": [
             "JavaScript",
             "Google Maps API",

@@ -1,8 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'variables.scss';
+@import '~animate.css/animate.min';
 
 body {
-    background-color: #272727;
+    background-color: #181818;
     color: #f4f4f4;
     font-family: sans-serif;
 }
