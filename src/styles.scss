@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'variables.scss';
 @import '~animate.css/animate.min';
+@import "~ngx-smart-modal/ngx-smart-modal";
 
 body {
     background-color: #181818;
@@ -66,3 +67,11 @@ body {
       transform: rotate(360deg);
     }
   }
+
+.nsm-dialog {
+  max-width: 90vw;
+  img.modal-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

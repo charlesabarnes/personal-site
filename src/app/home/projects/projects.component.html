@@ -1,7 +1,7 @@
 <loading *ngIf="loading"></loading>
 <div *ngIf="!loading">
     <div class="animated project fadeIn" [ngStyle]="{'animation-delay': i*125 +'ms'}" *ngFor="let project of projects; let i = index">
-        <img [src]="'../../../assets/images/' + project.image" [alt]="project.name + ' screenshot'">
+        <img [src]="'../../../assets/images/' + project.image" [alt]="project.name + ' screenshot'" (click)="openModal(project)">
         <h2>{{ project.name }}</h2>
         <span class="year">{{ project.year }}</span>
         <div class="tools">
@@ -17,3 +17,9 @@
         </div>
     </div>
 </div>
+
+
+<ngx-smart-modal  #imageModal [identifier]="'imageModal'">
+    <img class="modal-image"
+         [src]="'../../../assets/images/' + imageModal.getData()">
+</ngx-smart-modal>

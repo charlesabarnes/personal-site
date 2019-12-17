@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { NgxSmartModalService } from 'ngx-smart-modal';
 
 @Component({
   selector: 'app-projects',
@@ -11,12 +12,21 @@ export class ProjectsComponent implements OnInit {
   public projects: Project[];
   public loading: boolean = true;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private ngxSmartModalService: NgxSmartModalService) { }
 
   public ngOnInit() {
     this.getProjects();
   }
-    
+  
+  /**
+   * openModal
+   */
+  public openModal(project: Project) {
+    this.ngxSmartModalService.resetModalData('imageModal');
+    this.ngxSmartModalService.setModalData(project.image, 'imageModal');
+    this.ngxSmartModalService.create('imageModal',`blah`).open();
+  }
+
   private getProjects(): void {
     this.http.get('assets/projects.json').subscribe((projects: Project[]) => {
       this.projects = projects;

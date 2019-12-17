@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DatePipe } from '@angular/common';
 import { ProjectsComponent } from './home/projects/projects.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { NgxSmartModalModule } from 'ngx-smart-modal';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -28,6 +29,7 @@ const routes: Routes = [
    imports: [
       BrowserModule,
       RouterModule.forRoot(routes),
+      NgxSmartModalModule.forRoot(),
       HttpClientModule
    ],
    providers: [
