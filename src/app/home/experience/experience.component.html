@@ -1,9 +1,9 @@
 <loading *ngIf="loading"></loading>
 <div *ngIf="!loading">
-    <div class="technology" *ngFor="let technology of technologies.technologies">
+    <div class="animated technology fadeIn" [ngStyle]="{'animation-delay': i*125 +'ms'}" *ngFor="let technology of technologies.technologies; let i = index">
         {{ technology.name }}
         <div class="progress-bar">
-            <div class="progress" class="progress" [ngStyle]="{'width': datePercentage(technology)}"></div>
+            <div class="animated progress fadeInLeft" class="progress" [ngStyle]="{'width': datePercentage(technology)}"></div>
         </div>
         <span>Since {{ getStartDate(technology) }}</span>
     </div>
