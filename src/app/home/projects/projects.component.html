@@ -1,5 +1,6 @@
 <loading *ngIf="loading"></loading>
 <div *ngIf="!loading">
+  <h1>Projects</h1>
     <div class="animated project fadeIn" [ngStyle]="{'animation-delay': i*125 +'ms'}" *ngFor="let project of projects; let i = index">
         <img [src]="'../../../assets/images/' + project.image" [alt]="project.name + ' screenshot'" (click)="openModal(project)">
         <h2>{{ project.name }}</h2>

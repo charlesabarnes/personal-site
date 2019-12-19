@@ -78,8 +78,8 @@
         @for $i from 1 through 70 {
             &:nth-child(#{$i}) {
                 left: random(150)+vh;
-                animation: falling random(20)+s linear infinite, twinkle (random(5) + 2)+s linear infinite;
-                animation-delay: -+random(15)+s;
+                animation: falling (random(18000) + 2000)+ms linear infinite, twinkle (random(5) + 2)+s linear infinite;
+                animation-delay: -+random(1500)+ms;
                 opacity: random();
             }
             &:nth-child(odd) {

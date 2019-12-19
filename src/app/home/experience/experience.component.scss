@@ -1,6 +1,7 @@
 @import '../../../variables.scss';
 :host {
     >div {
+        margin-top: 10vh;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
