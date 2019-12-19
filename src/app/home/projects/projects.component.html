@@ -10,11 +10,9 @@
             </span>
           </div>
         <p>{{ project.description }}</p>
-        <div class="roles">
-          <span class="role" *ngFor="let role of project.role">
-            {{ role}}
-          </span>
-        </div>
+        <span class="users" *ngIf="project.users">
+          {{ project.users }}
+        </span>
     </div>
 </div>
 

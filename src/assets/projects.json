@@ -31,7 +31,8 @@
             "designer"
         ],
         "year": "2019",
-        "description": "Angular app used for agile teams wanting to add points to their user stories."
+        "description": "Angular app used for agile teams wanting to add points to their user stories.",
+        "users": "200 Users"
     },
     {
         "name": "Career Portal Angular Upgrade",
@@ -45,7 +46,8 @@
             "developer"
         ],
         "year": "2019",
-        "description": "Angular universal app that allows candidates to search for and apply to jobs."
+        "description": "Angular universal app that allows candidates to search for and apply to jobs.",
+        "users": "30000+ Applicants, 300+ Companies"
     },
     {
         "name": "Boxlab - BBO",
@@ -61,7 +63,8 @@
             "designer"
         ],
         "year": "2019",
-        "description": "Angular and Firebase application that is used to reserve QA environments for testing as well as viewing up to date version information."
+        "description": "Angular and Firebase application that is used to reserve QA environments for testing as well as viewing up to date version information.",
+        "users": "20 Users"
     },
     {
         "name": "RAMPS",
@@ -92,7 +95,8 @@
             "developer"
         ],
         "year": "2017",
-        "description": "A web app that gathers DNS information such as SPF, MX, and Whois. It is open source and modular to be a free self hosted version of Mx toolbox. This app has over 50 users a day on my main site and many more users who self host the project"
+        "description": "A web app that gathers DNS information such as SPF, MX, and Whois. It is open source and modular to be a free self hosted version of Mx toolbox. This app has over 50 users a day on my main site and many more users who self host the project",
+        "users": "2200 Users"
     },
     {
         "name": "Dataloader GUI",

@@ -44,4 +44,5 @@ export interface Project {
     role: string[],
     year: string;
     description: string;
+    users?: string;
 }

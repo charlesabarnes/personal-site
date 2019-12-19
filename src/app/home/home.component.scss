@@ -3,12 +3,39 @@
         height: 100vh;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        text-align: center;
+        text-align: left;
+        z-index: 5;
+        margin-left: 20%;
+        margin-right: 25%;
+        animation-name:  bounce, fadeIn;
+        h1 {
+            font-size: 4em;
+            margin-bottom: 30px;
+            span {
+                color: #1694c5;
+            }
+        }
+    }
+    .scroll-indicator {
+        position: absolute;
+        bottom: 10px;
+        right: 50%;
+        display: flex;
+        flex-direction: column;
+        i {
+            border: solid #f4f4f4;
+            border-width: 0 5px 5px 0;
+            display: inline-block;
+            padding: 20px;
+            transform: rotate(45deg);
+            &:nth-child(2) {
+                transform: rotate(45deg) translateY(-20px) translateX(-20px);
+            }
+        }
+          
     }
 
-    @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
 *{
     margin: 0px;
@@ -36,98 +63,71 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    li{
+    z-index: -1;
+
+    li {
         position: absolute;
         display: block;
         list-style: none;
-        width: 20px;
-        height: 20px;
-        background: rgba(255, 255, 255, 0.2);
-        animation: animate 25s linear infinite;
-        bottom: -150px;
-        &:nth-child(1){
-            left: 25%;
-            width: 80px;
-            height: 80px;
-            animation-delay: 0s;
+        width: 5px;
+        height: 5px;
+        top: -50px;
+        border-radius: 25px;
+        z-index: -1;
+
+        @for $i from 1 through 70 {
+            &:nth-child(#{$i}) {
+                left: random(150)+vh;
+                animation: falling random(20)+s linear infinite, twinkle (random(5) + 2)+s linear infinite;
+                animation-delay: -+random(15)+s;
+                opacity: random();
+            }
+            &:nth-child(odd) {
+                background: rgba(22, 148, 197)
+            }
+            &:nth-child(even) {
+                background: rgba(255, 255, 255)
+            }
         }
-        &:nth-child(2){
-            left: 10%;
-            width: 20px;
-            height: 20px;
-            animation-delay: 2s;
-            animation-duration: 12s;
+        @for $i from 1 through 15 {
+            &:nth-child(#{$i}) {
+                left: -+random(50)+vh;
+            }
         }
-        &:nth-child(3){
-            left: 70%;
-            width: 20px;
-            height: 20px;
-            animation-delay: 4s;
-        }
-        &:nth-child(4){
-            left: 40%;
-            width: 60px;
-            height: 60px;
-            animation-delay: 0s;
-            animation-duration: 18s;
-        }
-        &:nth-child(5){
-            left: 65%;
-            width: 20px;
-            height: 20px;
-            animation-delay: 0s;
-        }
-        &:nth-child(6){
-            left: 75%;
-            width: 110px;
-            height: 110px;
-            animation-delay: 3s;
-        }
-        &:nth-child(7){
-            left: 35%;
-            width: 150px;
-            height: 150px;
-            animation-delay: 7s;
-        }
-        &:nth-child(8){
-            left: 50%;
-            width: 25px;
-            height: 25px;
-            animation-delay: 15s;
-            animation-duration: 45s;
-        }
-        &:nth-child(9){
-            left: 20%;
-            width: 15px;
-            height: 15px;
-            animation-delay: 2s;
-            animation-duration: 35s;
-        }
-        &:nth-child(10){
-            left: 85%;
-            width: 150px;
-            height: 150px;
-            animation-delay: 0s;
-            animation-duration: 11s;
-        }
+        
     }
 }
 
 
 
-
-@keyframes animate {
+@keyframes falling {
 
     0%{
         transform: translateY(0) rotate(0deg);
-        opacity: 1;
-        border-radius: 0;
     }
 
     100%{
-        transform: translateY(-1000px) rotate(720deg);
+        transform: translateY(100vh) translateX(50vw) rotate(720deg);
         opacity: 0;
-        border-radius: 50%;
+    }
+
+}
+
+@keyframes twinkle {
+
+    0%{
+        opacity: auto;
+    }
+
+    45%{
+        opacity: 1;
+    }
+
+    55%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: auto;
     }
 
 }

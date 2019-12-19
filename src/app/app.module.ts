@@ -15,7 +15,7 @@ import { NgxSmartModalModule } from 'ngx-smart-modal';
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: '**', redirectTo: '/' },
-]
+];
 
 @NgModule({
    declarations: [
