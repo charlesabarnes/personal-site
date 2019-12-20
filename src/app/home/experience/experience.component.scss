@@ -1,10 +1,21 @@
 @import '../../../variables.scss';
 :host {
-    >div {
+    div.personal {
         margin-top: 10vh;
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-around;
+        .details {
+            flex-basis: 35%;
+
+        }
+    }
+    div.personal > div.technologies {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        flex-basis: 55%;
+        
         >div.technology {
             display: flex;
             flex-direction: column;

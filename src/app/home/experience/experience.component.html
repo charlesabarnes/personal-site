@@ -1,10 +1,16 @@
 <loading *ngIf="loading"></loading>
-<div *ngIf="!loading">
-    <div class="animated technology fadeIn" [ngStyle]="{'animation-delay': i*125 +'ms'}" *ngFor="let technology of technologies.technologies; let i = index">
-        {{ technology.name }}
-        <div class="progress-bar">
-            <div class="animated progress fadeInLeft" class="progress" [ngStyle]="{'width': datePercentage(technology)}"></div>
-        </div>
-        <span>Since {{ getStartDate(technology) }}</span>
+<div class="personal" *ngIf="!loading">
+    <div class="details">
+    I am a developer based out of St. Louis, Missouri that works mostly in PHP, HTML, CSS, and Javascript/Typescript. Feel free to check out some of my projects below.
+    Reach out to charles@charlesabarnes.com if you have any questions
     </div>
+    <div class="technologies">
+        <div class="animated technology fadeIn" [ngStyle]="{'animation-delay': i*125 +'ms'}" *ngFor="let technology of technologies.technologies; let i = index">
+            {{ technology.name }}
+            <div class="progress-bar">
+                <div class="animated progress fadeInLeft" class="progress" [ngStyle]="{'width': datePercentage(technology)}"></div>
+            </div>
+        </div>
+    </div>
+
 </div>
