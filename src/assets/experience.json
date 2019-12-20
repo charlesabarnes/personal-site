@@ -2,27 +2,35 @@
     "technologies": [
         {
             "name": "HTML & CSS",
-            "startDate": "2010-01-01"
+            "percent": 100
         },
         {
             "name": "JavaScript",
-            "startDate": "2013-01-01"
+            "percent": 95
         },
         {
             "name": "TypeScript",
-            "startDate": "2017-08-01"
+            "percent": 80
         },
         {
             "name": "AngularJS",
-            "startDate": "2016-01-04"
+            "percent": 76
         },
         {
             "name": "Angular",
-            "startDate": "2017-05-01"
+            "percent": 95
         },
         {
             "name": "PHP",
-            "startDate": "2017-02-01"
+            "percent": 60
+        },
+        {
+            "name": "React",
+            "percent": 55
+        },
+        {
+            "name": "Java",
+            "percent": 50
         }
     ]
 }

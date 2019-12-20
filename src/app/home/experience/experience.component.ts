@@ -17,15 +17,6 @@ export class ExperienceComponent implements OnInit {
     this.getJobExperience();
   }
   
-  public datePercentage(technology: Technology) : string {
-    let percent: number = differenceInDays(new Date(), new Date(technology.startDate)) / differenceInDays(new Date(), new Date('2010-01-01'));
-    return `${Math.floor(percent * 100).toString()}%`;
-  }
-
-  public getStartDate(technology: Technology): string {
-    return this.date.transform(technology.startDate, 'mediumDate')
-  }
-  
   private getJobExperience(): void {
     this.http.get('assets/experience.json').subscribe((technologies: Technologies) => {
       this.technologies = technologies;
@@ -40,5 +31,5 @@ export interface Technologies {
 }
 export interface Technology {
   name: string, 
-  startDate: string
+  percent: string
 }
