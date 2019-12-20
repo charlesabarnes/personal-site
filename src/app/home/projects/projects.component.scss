@@ -13,22 +13,28 @@
             flex-basis: 25%;
             flex-grow: 1;
             margin: 30px;
-            padding-bottom: 20px;
             box-shadow: 0 0 8px 0 rgba(0,0,0,.25);
             border-radius: 0.4em;
             position: relative;
-            overflow-x: hidden;
             text-align: center;
             background-color: #181818;
+            overflow: hidden;
+            &:hover{
+                div.information {
+                    display: flex;
+                    cursor: pointer;
+                }
+
+            }
             h2 {
                 margin-bottom: 5px;
+                font-size: 2vw;
             }
             p {
-                //font-size: 1.1vw;
+                font-size: 1.1vw;
             }
             img {
                 width: 100%;
-                cursor: pointer;
             }
             span.year {
                 display: none;
@@ -55,7 +61,7 @@
                 span {
                     padding: 4px;
                     margin: 5px;
-                    font-size: .7em;
+                    font-size: .8vw;
                     align-self: center;
                     &.tool {
                         background-color: #1694c5;
@@ -68,6 +74,24 @@
             span.users {
                 color: #1694c5;
                 font-weight: 700;
+            }
+
+            div.information {
+                top: 0;
+                position: absolute;
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #243840c2;
+                height: 100%;
+                .text-container {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    place-content: center;
+                    padding-bottom: 10%;
+                    margin: 0 10%;
+                }
             }
         }
     }
