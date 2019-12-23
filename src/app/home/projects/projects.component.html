@@ -1,8 +1,8 @@
 <loading *ngIf="loading"></loading>
 <div *ngIf="!loading">
-  <h1>Projects</h1>
-    <div (click)="openModal(project)" class="animated project fadeIn" [ngStyle]="{'animation-delay': i*125 +'ms'}" *ngFor="let project of projects; let i = index">
-        <img [src]="'assets/images/' + project.image" [alt]="project.name + ' screenshot'" >
+  <h1 animations="animated fadeIn">Projects</h1>
+    <div animations="animated fadeIn" (click)="openModal(project)" class="project " [ngStyle]="{'animation-delay': i*125 +'ms'}" *ngFor="let project of projects; let i = index">
+        <img *ngIf="project.image" [src]="'assets/images/' + project.image" [alt]="project.name + ' screenshot'" >
         <div class="information animated fadeIn">
           <div class="text-container">
             <div class="tech">

@@ -40,6 +40,15 @@ body {
         box-sizing: border-box;
     }
 }
+[animations] {
+  visibility: hidden;
+&.animated {
+  visibility: visible !important;
+  //display: none !important;
+}
+}
+
+
 
 
   @keyframes pixel-spinner-animation {

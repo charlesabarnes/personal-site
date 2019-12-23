@@ -1,8 +1,8 @@
 <loading *ngIf="loading"></loading>
-<h1 class="animated fadeInLeft">About Me</h1>
+<h1 animations="animated fadeInLeft">About Me</h1>
 <div class="personal" *ngIf="!loading">
-    <div class="details animated fadeIn">
-        <div class="headshot animated fadeIn">
+    <div class="details" animations="animated fadeInLeft">
+        <div class="headshot" animations="animated fadeIn">
             <img src="assets/images/me.jfif">
         </div>
         <div class="icons">
@@ -31,18 +31,20 @@
                 </svg></a>
 
     </div>
-    I am a developer based out of St. Louis, Missouri that works mostly in PHP, HTML, CSS, and Javascript/Typescript. Feel free to check out some of my projects below.
-    Reach out to charles@charlesabarnes.com if you have any questions
+    <span animations="animated fadeIn">
+        I am a developer based out of St. Louis, Missouri that works mostly in PHP, HTML, CSS, and Javascript/Typescript. Feel free to check out some of my projects below.
+        Reach out to charles@charlesabarnes.com if you have any questions
+    </span>
     </div>
-    <div class="technologies animated fadeIn">
-        <div class="animated technology fadeIn" [ngStyle]="{'animation-delay': i*125 +'ms'}" *ngFor="let technology of technologies.technologies; let i = index">
+    <div class="technologies" animations="animated fadeInRight"> 
+        <div class="technology" animations="animated fadeIn" [ngStyle]="{'animation-delay': i*125 +'ms'}" *ngFor="let technology of technologies.technologies; let i = index">
             {{ technology.name }}
             <div class="progress-bar">
-                <div class="animated progress fadeInLeft" class="progress" [ngStyle]="{'width': technology.percent + '%'}"></div>
+                <div animations="animated progress fadeInLeft" [ngStyle]="{'width': technology.percent + '%'}"></div>
             </div>
         </div>
         <div class="indicator">
-            <div class="animated fadeIn" [ngStyle]="{'animation-delay': in*125 +'ms'}" *ngFor="let expLevel of expLevels; let in = index" ><span>{{ expLevel }}</span></div>
+            <div animations="animated fadeIn" [ngStyle]="{'animation-delay': in*125 +'ms'}" *ngFor="let expLevel of expLevels; let in = index" ><span>{{ expLevel }}</span></div>
         </div>
     </div>
 

@@ -11,6 +11,7 @@ import { DatePipe } from '@angular/common';
 import { ProjectsComponent } from './home/projects/projects.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { NgxSmartModalModule } from 'ngx-smart-modal';
+import { StartAnimationDirective } from './startAnimation.directive';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -25,6 +26,7 @@ const routes: Routes = [
       ExperienceComponent,
       ProjectsComponent,
       PortfolioComponent,
+      StartAnimationDirective
    ],
    imports: [
       BrowserModule,
