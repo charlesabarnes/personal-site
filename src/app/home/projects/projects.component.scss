@@ -11,10 +11,16 @@
         }
         div.project {
             flex-basis: 25%;
+            @media only screen and (max-width: 600px) {
+                flex-basis: 100%;
+            }
+            @media only screen and (min-width: 600px) and (max-width: 1000px) {
+                flex-basis: 40%;
+            }
             flex-grow: 1;
-            margin: 30px;
+            margin: 2vw;
             box-shadow: 0 0 8px 0 rgba(0,0,0,.25);
-            border-radius: 0.4em;
+            border-radius: 0.5vw;
             position: relative;
             text-align: center;
             background-color: #181818;
@@ -59,8 +65,8 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 span {
-                    padding: 4px;
-                    margin: 5px;
+                    padding: .4vw;
+                    margin: 1vw;
                     font-size: .8vw;
                     align-self: center;
                     &.tool {

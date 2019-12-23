@@ -9,17 +9,24 @@
         display: flex;
         flex-direction: row; 
         justify-content: space-around;
+        flex-wrap: wrap;
         .details {
+            @media only screen and (max-width: 850px) {
+                flex-basis: 85%;
+                margin-bottom: 50px;
+            }
             flex-basis: 35%;
             text-align: center;
+            font-size: 2vh;
+            line-height: 2.5vh;
             .headshot {
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
                 margin-bottom: 10px;
                 img {
-                    width: 128px;
-                    height: 128px;
+                    width: 10vh;
+                    height: 10vh;
                     border-radius: 50%;
                 }
             }
@@ -40,6 +47,10 @@
         flex-direction: row;
         flex-wrap: wrap;
         flex-basis: 55%;
+        @media only screen and (max-width: 850px) {
+            flex-basis: 85%;
+            margin-bottom: 50px;
+        }
         position: relative;
         div.indicator {
             position: absolute;
@@ -56,13 +67,18 @@
             flex-direction: row;
             justify-content: space-around;
             >div {
-                border-right: 1px dashed #f4f4f452;
+                border-right: .05vw dashed #f4f4f452;
+                @media only screen and (max-width: 850px) {
+                    border-right: 1px dashed #f4f4f452;
+
+                }
                 height: 100%;
                 width: 3px;
                 display: flex;
                 align-items: flex-end;
                 span {
                     transform: rotate(30deg) translateY(20px) translateX(15px);
+                    font-size: 1.5vh;
                 }
             }
         }
@@ -71,15 +87,16 @@
             flex-direction: column;
             flex-grow: 1;
             flex-basis: 100%;
+            font-size: 1.5vh;
             div.progress-bar{ 
                 background-color: #1d1d1d;
-                margin: 20px;
-                border-radius: 3px;
+                margin: 1vw;
+                border-radius: 1vw;
                 >div.progress {
                     background-color: $primary;
-                    height: 7px;
+                    height: .55vh;
                     width: 0px;
-                    border-radius: 3px;
+                    border-radius: 1vw;
                     animation: slide 1s linear;
                 }
             }

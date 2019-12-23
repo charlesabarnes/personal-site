@@ -10,6 +10,7 @@ import { DatePipe } from '@angular/common';
 export class ExperienceComponent implements OnInit {
   public technologies: Technologies;
   public loading: boolean = true;
+  public expLevels: string[] = ['Familiar', 'Beginner', 'Intermediate', 'Advanced', 'Master'];
 
   constructor(private http: HttpClient, private date: DatePipe) { }
 

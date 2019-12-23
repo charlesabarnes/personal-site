@@ -3,10 +3,10 @@
 <div class="personal" *ngIf="!loading">
     <div class="details animated fadeIn">
         <div class="headshot animated fadeIn">
-            <img src="../../../assets/images/me.jfif">
+            <img src="assets/images/me.jfif">
         </div>
         <div class="icons">
-            <a class="animated fadeIn" style="animation-delay: 125ms" target="_blank" href="https://github.com/charlesabarnes"><svg height="40px" version="1.1" viewBox="0 0 60 60" width="40px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <a class="animated fadeIn" style="animation-delay: 125ms" target="_blank" href="https://github.com/charlesabarnes"><svg height="5vh" version="1.1" viewBox="0 0 60 60" width="5vh" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <title></title>
                     <desc></desc>
                     <defs></defs>
@@ -18,7 +18,7 @@
                     </g>
                 </svg></a>
 
-            <a class="animated fadeIn" style="animation-delay: 250ms" target="_blank" href="https://www.linkedin.com/in/charlesabarnes/"><svg height="40px" version="1.1" viewBox="0 0 60 60" width="40px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <a class="animated fadeIn" style="animation-delay: 250ms" target="_blank" href="https://www.linkedin.com/in/charlesabarnes/"><svg height="5vh" version="1.1" viewBox="0 0 60 60" width="5vh" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <title></title>
                     <desc></desc>
                     <defs></defs>
@@ -34,7 +34,7 @@
     I am a developer based out of St. Louis, Missouri that works mostly in PHP, HTML, CSS, and Javascript/Typescript. Feel free to check out some of my projects below.
     Reach out to charles@charlesabarnes.com if you have any questions
     </div>
-    <div class="technologies">
+    <div class="technologies animated fadeIn">
         <div class="animated technology fadeIn" [ngStyle]="{'animation-delay': i*125 +'ms'}" *ngFor="let technology of technologies.technologies; let i = index">
             {{ technology.name }}
             <div class="progress-bar">
@@ -42,11 +42,7 @@
             </div>
         </div>
         <div class="indicator">
-            <div><span>Familiar</span></div>
-            <div><span>Beginner</span></div>
-            <div><span>Intermediate</span></div>
-            <div><span>Advanced</span></div>
-            <div><span>Master</span></div>
+            <div class="animated fadeIn" [ngStyle]="{'animation-delay': in*125 +'ms'}" *ngFor="let expLevel of expLevels; let in = index" ><span>{{ expLevel }}</span></div>
         </div>
     </div>
 
