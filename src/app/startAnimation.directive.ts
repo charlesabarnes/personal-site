@@ -50,7 +50,6 @@ export class StartAnimationDirective implements AfterViewInit, OnDestroy {
     }
   }
   isVisible(){
-    console.log(!(this.elementRect.bottom < 0 || this.elementRect.top - this.windowHeight >= 0));
     return !(this.elementRect.bottom < 0 || this.elementRect.top - this.windowHeight >= 0);
   }
 
