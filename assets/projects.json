@@ -1,0 +1,132 @@
+[
+    {
+        "name": "Trumpet",
+        "url": "https://github.com/charlesabarnes/trumpet",
+        "image": "trumpet.png",
+        "tools": [
+            "NodeJs",
+            "Express",
+            "MongoDB",
+            "Websockets"
+        ],
+        "role": [
+            "creator",
+            "developer"
+        ],
+        "year": "2019",
+        "description": "Framework or Platform that allows you to easily create in app notifications that are sent via websocket, or send browser push notifications if the user is not active in the application that Trumpet is integrated with."
+    },
+    {
+        "name": "Pointing Poker",
+        "url": "https://github.com/charlesabarnes/pointing-poker",
+        "image": "pointing-poker.png",
+        "tools": [
+            "NodeJs",
+            "Websockets",
+            "Angular Universal"
+        ],
+        "role": [
+            "creator",
+            "developer",
+            "designer"
+        ],
+        "year": "2019",
+        "description": "Angular app used for agile teams wanting to add points to their user stories.",
+        "users": "200 Users"
+    },
+    {
+        "name": "Career Portal Angular Upgrade",
+        "url": "https://github.com/bullhorn/career-portal",
+        "image": "career-portal.png",
+        "tools": [
+            "Angular Universal"
+        ],
+        "role": [
+            "creator",
+            "developer"
+        ],
+        "year": "2019",
+        "description": "Angular universal app that allows candidates to search for and apply to jobs.",
+        "users": "30000+ Applicants, 300+ Companies"
+    },
+    {
+        "name": "Boxlab - BBO",
+        "url": "",
+        "image": "boxlab.png",
+        "tools": [
+            "Angular",
+            "Firbase"
+        ],
+        "role": [
+            "creator",
+            "developer",
+            "designer"
+        ],
+        "year": "2019",
+        "description": "Angular and Firebase application that is used to reserve QA environments for testing as well as viewing up to date version information.",
+        "users": "20 Users"
+    },
+    {
+        "name": "RAMPS",
+        "url": "",
+        "image": "ramps.png",
+        "tools": [
+            "NodeJs",
+            "Express",
+            "Angular",
+            "Python"
+        ],
+        "role": [
+            "creator",
+            "developer"
+        ],
+        "year": "2018",
+        "description": "Platform created for marketing on robots with displays. The platform is flexible enough to allow you to synchronize displays on many robots or independent screens via a web app."
+    },
+    {
+        "name": "SPF Toolbox",
+        "url": "https://github.com/charlesabarnes/SPFtoolbox",
+        "image": "spf-toolbox.png",
+        "tools": [
+            "PHP"
+        ],
+        "role": [
+            "creator",
+            "developer"
+        ],
+        "year": "2017",
+        "description": "A web app that gathers DNS information such as SPF, MX, and Whois. It is open source and modular to be a free self hosted version of Mx toolbox. This app has over 50 users a day on my main site and many more users who self host the project",
+        "users": "2200 Users"
+    },
+    {
+        "name": "Dataloader GUI",
+        "url": "https://github.com/charlesabarnes/dataloaderGUI",
+        "image": "dataloaderGUI.png",
+        "tools": [
+            "Java"
+        ],
+        "role": [
+            "creator",
+            "developer"
+        ],
+        "year": "2016",
+        "description": "Simple Java UI for Bullhorn's Dataloader project"
+    },
+    {
+        "name": "How Much With Tax",
+        "url": "https://github.com/SpaghettiCodeStudios/HowMuchWithTax",
+        "image": "how-much-with-tax.png",
+        "tools": [
+            "JavaScript",
+            "Google Maps API",
+            "MySQL",
+            "PHP"
+        ],
+        "role": [
+            "creator",
+            "developer"
+        ],
+        "year": "2016",
+        "description": "Web app that provided the exact cost of an item with tax. The location was retrieved from the user or the browser and with that information we used the Google Maps API to determine the zip code. From the zip code we queried a database of zip codes with tax rates associated."
+    }
+]

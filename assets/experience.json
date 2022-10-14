@@ -1,0 +1,36 @@
+{
+    "technologies": [
+        {
+            "name": "HTML & CSS",
+            "percent": 100
+        },
+        {
+            "name": "JavaScript",
+            "percent": 95
+        },
+        {
+            "name": "TypeScript",
+            "percent": 90
+        },
+        {
+            "name": "AngularJS",
+            "percent": 76
+        },
+        {
+            "name": "Angular",
+            "percent": 95
+        },
+        {
+            "name": "PHP",
+            "percent": 60
+        },
+        {
+            "name": "React",
+            "percent": 90
+        },
+        {
+            "name": "Java",
+            "percent": 50
+        }
+    ]
+}
