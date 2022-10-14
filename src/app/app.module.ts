@@ -19,32 +19,26 @@ const routes: Routes = [
 ];
 
 @NgModule({
-   declarations: [
-      AppComponent,
-      HomeComponent,
-      LoadingIndicatorComponent,
-      ExperienceComponent,
-      ProjectsComponent,
-      PortfolioComponent,
-      StartAnimationDirective
-   ],
-   imports: [
-      BrowserModule,
-      RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' }),
-      NgxSmartModalModule.forRoot(),
-      HttpClientModule
-   ],
-   providers: [
-      DatePipe
-   ],
-   bootstrap: [
-      AppComponent
-   ],
-   entryComponents: [
-      LoadingIndicatorComponent,
-      ExperienceComponent,
-      ProjectsComponent,
-      PortfolioComponent
-   ]
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        LoadingIndicatorComponent,
+        ExperienceComponent,
+        ProjectsComponent,
+        PortfolioComponent,
+        StartAnimationDirective
+    ],
+    imports: [
+        BrowserModule,
+        RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' }),
+        NgxSmartModalModule.forRoot(),
+        HttpClientModule
+    ],
+    providers: [
+        DatePipe
+    ],
+    bootstrap: [
+        AppComponent
+    ]
 })
 export class AppModule { }
